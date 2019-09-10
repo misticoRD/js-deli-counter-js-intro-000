@@ -19,7 +19,7 @@ function  currentLine (katzDeliLine) {
   if (katzDeliLine.length===0) {
   return "The line is currently empty.";
 }
-   let customerNum = [];
+   let customerNumber = [];
    for (var i = 0; i<katzDeliLine.length; i++) {
    customerNumber.push(i+1 + ". " + katzDeliLine[i])
 }
