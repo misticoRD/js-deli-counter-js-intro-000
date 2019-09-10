@@ -15,13 +15,13 @@ if(deliLine.length === 0){
 name = deliLine.shift();
 return `Currently serving ${name}.`
 }
-var currentLine = function (katzDeliLine) {
+function  currentLine (katzDeliLine) {
   if (katzDeliLine.length===0) {
   return "The line is currently empty.";
 }
-   var customerAndNumber = [];
-   for (var i=0; i<katzDeliLine.length; i++) {
-   customerAndNumber.push(i+1 + ". " + katzDeliLine[i])
+   let customerNum = [];
+   for (var i = 0; i<katzDeliLine.length; i++) {
+   customerNumber.push(i+1 + ". " + katzDeliLine[i])
 }
-  return "The line is currently: " + customerAndNumber.join(", ");
+  return "The line is currently: " + customerNumber.join(", ");
 }
